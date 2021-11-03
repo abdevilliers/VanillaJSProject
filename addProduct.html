@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Plain JS App</title>
+  <script src="src/ctrl/initialize.js"></script>
+  <script src="src/model/Product.js"></script>
+  <script src="src/view/addProduct.js"></script>
+  <script>
+   window.addEventListener("load", pl.view.addProduct.setupUserInterface);
+  </script>
+</head>
+<body>
+  <h1>Product Inventory: Create a new product</h1>
+  <form id="Product">
+    <p><label>Product Id: <input name="pdId" /></label></p>
+    <p><label>Product Name: <input name="pdName" /></label></p>
+    <p><label>Quantity Available: <input name="qtyAvail" /></label></p>
+    <p><button type="button" name="commit">Save</button></p>
+  </form>
+  <nav><a href="index.html">Back to main menu</a></nav>
+</body>
+</html>
